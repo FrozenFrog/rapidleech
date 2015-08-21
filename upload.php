@@ -1,7 +1,7 @@
 <?php
 
 require_once('rl_init.php');
-ignore_user_abort(true);
+ignore_user_abort(false);
 
 login_check();
 

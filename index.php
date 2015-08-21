@@ -1,7 +1,7 @@
 <?php
 
 require_once('rl_init.php');
-ignore_user_abort(true);
+ignore_user_abort(false);
 login_check();
 
 // If configs/files.lst is not writable, give a warning
@@ -148,6 +148,9 @@ if (empty($_GET['filename']) || empty($_GET['host']) || empty($_GET['path'])) {
 	include(TEMPLATE_DIR . '/header.php');
 	if ($options['ref_check']) check_referer();
 	echo('<div align="center">');
+	echo ('<form method="get" action="' . $PHP_SELF . '">');
+    echo ('<input type="submit" onclick="'.ignore_user_abort(false).'" value="Stop Download?"/>');
+    echo ('</form>');
 
 	do {
 		$_GET['filename'] = urldecode(trim($_GET['filename']));

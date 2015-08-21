@@ -6,7 +6,7 @@ if ($options['auto_download_disable']) {
 	exit();
 }
 error_reporting(0);
-ignore_user_abort(true);
+ignore_user_abort(false);
 
 login_check();
 
