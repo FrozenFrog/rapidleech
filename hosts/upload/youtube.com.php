@@ -3,6 +3,8 @@
 // Youtube Developer Key. NEEDED TO WORK...
 $YT_Developer_Key = "AI39si4puQ3D8jQlWqqHkb5GqnANIFuJLB999TcpIQs-X1k5VCQ8re-Bz4lJmqNWPhr7TNgMzthDUWm8zywaRkPYwz16MoRhsQ";
 // Get your Developer Key @ https://code.google.com/apis/youtube/dashboard/gwt/index.html
+// https://accounts.google.com/DisplayUnlockCaptcha 
+// Fix always fail at login, Error=BadAuthentication
 
 ####### Account Info. ###########
 $upload_acc['youtube_com']['user'] = ""; //Set your username/email
